@@ -1,5 +1,7 @@
 ---
 import Button from "../components/Button.astro";
+import Text from "../components/Text.astro";
+import TextCard from "../components/TextCard.astro";
 ---
 
 <html lang="en">
@@ -12,8 +14,15 @@ import Button from "../components/Button.astro";
 	</head>
 	<body>
 		<h1>Astro hej</h1>
+		<Button variant="container"/>
+			<Text header="Best of the day" text="Shots featured"/>
+			<Text header="Featured streams" text="Watch livetreams"/>
+			<Text header="Subscriptions" text="Premium content"/>
+			<Text header="Subscriptions" text="Premium content"/>
 		<Button/>
-		<Button variant="primary"/>
-		<Button variant="secondary"/>
+		<TextCard/>
+	<!-- 	<Button variant="primary"/>
+		<Button variant="secondary"/> -->
+
 	</body>
 </html>
